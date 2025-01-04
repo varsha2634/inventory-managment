@@ -1,0 +1,62 @@
+-- Create Users Table
+CREATE TABLE IF NOT EXISTS Users (
+    UserId INTEGER PRIMARY KEY, -- Primary key with auto-increment
+    UserName VARCHAR(50) NOT NULL,
+    Password VARCHAR(255) NOT NULL,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    Role VARCHAR(20) NOT NULL CHECK (Role IN ('Admin', 'Manager', 'Staff')),
+    Phone VARCHAR(15),
+    Email VARCHAR(100)
+);
+
+-- Create Suppliers Table
+CREATE TABLE IF NOT EXISTS Suppliers (
+    SupplierId INTEGER PRIMARY KEY AUTOINCREMENT, -- Auto-incrementing primary key
+    SupplierName VARCHAR(100) NOT NULL,
+    SupplierEmail VARCHAR(100),
+    SupplierContact VARCHAR(15)
+);
+
+-- Create Products Table
+CREATE TABLE IF NOT EXISTS Products (
+    ProductId INTEGER PRIMARY KEY AUTOINCREMENT, -- Auto-incrementing primary key
+    ProductName VARCHAR(100) NOT NULL,
+    Description TEXT,
+    ProductImage VARCHAR(255),
+    Category VARCHAR(50),
+    ModelNumber VARCHAR(50),
+    SerialNumber VARCHAR(50) UNIQUE,
+    StockLevel INT,
+    ReorderPoint INT,
+    SupplierId INTEGER NOT NULL, -- Foreign key reference to Suppliers
+    OrderDate DATE,
+    Quantity INT,
+    OrderStatus VARCHAR(20) NOT NULL CHECK (OrderStatus IN ('Pending', 'Delivered', 'Overdue')),
+    FOREIGN KEY (SupplierId) REFERENCES Suppliers(SupplierId) ON DELETE CASCADE
+);
+
+-- Insert Data into Users Table
+INSERT INTO Users (UserId, UserName, Password, FirstName, LastName, Role, Phone, Email)
+VALUES
+(1, 'rthomas', 'adminpass', 'Rachel', 'Thomas', 'Admin', '1234987650', 'abc@mail.com'),
+(2, 'ajackson', 'managerpass', 'Alex', 'Jackson', 'Manager', '7894987650', 'non@mail.com'),
+(3, 'pnelson', 'staffpass', 'Peter', 'Nelson', 'Staff', '7654987124', 'mmm@mail.com');
+
+-- Insert Data into Suppliers Table
+INSERT INTO Suppliers (SupplierName, SupplierEmail, SupplierContact)
+VALUES
+('Cisco', 'abcd@mail.com', '1234567890'),
+('HP', 'abhp@mail.com', '1980762345'),
+('Netgear', 'Neger@mail.com', '9256476541'),
+('Broadcom', 'brcom@mail.com', '1759731673'),
+('BELL', 'blee@mail.com', '1256476893');
+
+-- Insert Data into Products Table
+INSERT INTO Products (ProductName, Description, ProductImage, Category, ModelNumber, SerialNumber, StockLevel, ReorderPoint, SupplierId, OrderDate, Quantity, OrderStatus)
+VALUES
+('Cisco ISR 1101', 'ISR 1101 4 Ports GE Ethernet WAN Router', NULL, 'Router', 'XYZ123', '6a38028c-6a71-4f44-b8f6-253bc7086a0a', 500, 150, 1, '2023-01-15', 500, 'Delivered'),
+('HP 5406zl', 'HP ProCurve Switch 5406zl', NULL, 'Switch', 'ABC456', '7edc108e-45e0-4997-bc59-17852d16b689', 300, 100, 2, '2023-11-05', 300, 'Delivered'),
+('DOCSIS 3.1 Cable Modem', 'Superfast speeds up to 10 gigabits per second', 'modem.jpg', 'Modem', 'LMN789', 'e41e2e16-2945-4c0c-a584-48935742fe94', 200, 50, 3, '2023-08-06', 200, 'Delivered'),
+('Cellular Duplexer Rx', 'A multiplexer product that is RoHS6 compliant', NULL, 'Multiplexer', 'DSC423', '6aac9135-9ceb-4535-a13a-fc04ad8dadd5', 200, 50, 4, '2023-05-16', 200, 'Delivered'),
+('SBB100 Splitter Trough Block', 'Splitter block with copper-aluminium monopie', 'splitter.jpg', 'Splitter', 'BGH678', 'b01f5fea-f863-441e-9150-c5595caa9f01', 400, 75, 5, '2023-10-06', 400, 'Delivered');
