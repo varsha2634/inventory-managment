@@ -1,0 +1,56 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+      background-image: url('https://telecomreviewasia.com/images/stories/2021/01/telecommunications-industry-analysis.jpg'); /* Replace with your image path */
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .form-container {
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .add-button {
+    background-color: coral;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .supply-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .supply-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .delete-button {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }

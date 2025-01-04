@@ -1,0 +1,38 @@
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: black;
+    background-image: url('https://telecomreviewasia.com/images/stories/2021/01/telecommunications-industry-analysis.jpg');
+    overflow-y: auto;
+  }
+  
+  .main-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .main-content h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    color: darkgray;
+  }
+  
+  .main-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .main-content ul {
+    margin-left: 20px;
+    list-style: disc;
+      color:white;
+  }
+  
+  .main-content ul li {
+    font-size: 1.2em;
+    margin: 5px 0;
+  }
+  
