@@ -1,0 +1,118 @@
+[{
+  "_id": {
+    "$oid": "6778d0d8742bde4aa0b8907d"
+  },
+  "ProductName": "Cisco ISR 1101",
+  "Description": "ISR 1101 4 Ports GE Ethernet WAN Router",
+  "Productcateogy": "Router",
+  "Stock level": "High",
+  "Supplername": "vignesh",
+  "contact": 8331089993,
+  "email": "peramalasettyvigneshraja@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "6778d0d8742bde4aa0b8907e"
+  },
+  "ProductName": "HP 5406zl",
+  "Description": "HP ProCurve Switch 5406zl",
+  "Productcateogy": "Switch",
+  "Stock level": "low",
+  "supplername": "sanjana",
+  "contact": {
+    "$numberLong": "9806754367"
+  },
+  "email": "sanjanamouthukuru@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "6778d706742bde4aa0b8907f"
+  },
+  "ProductName": "DOCSIS 3.1 Cable Modem",
+  "Description": "Superfast speeds up to 10 gigabits per second (Gbps)",
+  "Productcateogy": "Modem",
+  "Stock level": "Medium",
+  "supplername": "mettuvarsha",
+  "contact": {
+    "$numberLong": "9896754367"
+  },
+  "email": "mettuvarsha@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "6778d706742bde4aa0b89080"
+  },
+  "ProductName": "HP 5406zl",
+  "Description": "HP ProCurve Switch 5406zl",
+  "Productcateogy": "Switch",
+  "Stock level": "High",
+  "supplername": "manika",
+  "contact": {
+    "$numberLong": "9806754367"
+  },
+  "email": "guptamanika90@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "6778d9a6742bde4aa0b89081"
+  },
+  "ProductName": "Proximity Card",
+  "Description": "A contactless smart card ",
+  "Productcateogy": "Card",
+  "Stock level": "Medium",
+  "supplername": "anil",
+  "contact": {
+    "$numberLong": "9896758767"
+  },
+  "email": "anilpalagati@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "6778d9a6742bde4aa0b89082"
+  },
+  "ProductName": "PLC Splitter",
+  "Description": "Integrated waveguide optical power distribution device",
+  "Productcateogy": "Splitter",
+  "Stock level": "Low",
+  "supplername": "manoj",
+  "contact": {
+    "$numberLong": "9806754390"
+  },
+  "email": "manojsulluru90@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "6778e09217fe5d27ed829e35"
+  },
+  "ProductName": "ETL-700  Combiner",
+  "Description": "A two-way combiner",
+  "Productcateogy": "Combiner",
+  "Stock level": "medium",
+  "supplername": "adhitya",
+  "contact": 9806754309,
+  "email": "adhithyaranjan098@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "6778e0bb17fe5d27ed829e36"
+  },
+  "ProductName": "ETL-700  Combiner",
+  "Description": "A two-way combiner",
+  "Productcateogy": "Combiner",
+  "Stock level": "medium",
+  "supplername": "adhitya",
+  "contact": 9806754309,
+  "email": "adhithyaranjan098@gmail.com"
+},
+{
+  "_id": {
+    "$oid": "6778e7e317fe5d27ed829e37"
+  },
+  "ProductName": "Optical Splitter",
+  "Description": "Integrated waveguide optical power distribution device",
+  "Productcateogy": "Splitter",
+  "Stock level": "medium",
+  "supplername": "manisha",
+  "contact": 9806709309,
+  "email": "manishanagisetty@gmail.com"
+}]
